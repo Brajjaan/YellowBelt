@@ -2,9 +2,6 @@
 
 class Program
 {    
-    public int Damage = 15; 
-    public int HealRate = 20;
-    
     static void Main(string[] args)
     {
         Attack(15);
