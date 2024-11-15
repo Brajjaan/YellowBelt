@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Player player = new("Arin", 100, 1);
+        Player player = new("Arin", 100);
         Enemy enemy = new("Orc");
 
         int damageDealt = player.Attack(35);

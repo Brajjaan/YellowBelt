@@ -7,11 +7,11 @@ public class Player
     private int Level { get; set; }
     private string Name { get; set; }
 
-    public Player(string name, int health,int level)
+    public Player(string name, int health)
     {
         Name = name;
         Health = health;
-        Level = level;
+        Level = 1;
         Experience = 0;
     }
     
