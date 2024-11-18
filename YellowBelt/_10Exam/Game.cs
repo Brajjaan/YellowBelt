@@ -15,7 +15,7 @@ public class Game
         Console.Write("Enter your name: ");
         string playerName = Console.ReadLine();
         _player = new Player(playerName);
-        Console.WriteLine($"{_player.Name} says: Ready for battle!");
+        Console.WriteLine();
     }
 
     public void Start()
@@ -61,7 +61,7 @@ public class Game
     private void EnemyEncounter()
     {
         Enemy enemy = new("Goblin", 30, 5);
-        Console.WriteLine($"\nA wild {enemy.Name} appears with {enemy.Health} health and {enemy.Damage} damage!");
+        Console.WriteLine($"\nA wild {enemy.Name} appears with {enemy.Health} health and {enemy.Damage} damage output!");
 
         while (enemy.IsAlive() && _player.IsAlive())
         {
